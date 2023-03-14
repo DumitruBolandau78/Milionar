@@ -1,0 +1,246 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 18px;
+    cursor: default;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.top-side {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .option {
+        margin: 10px;
+        border-radius: 50%;
+        border: 1px solid white;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.public-people, .phone {
+    fill: white;
+    width: 50px;
+    height: 50px;
+}
+
+.money {
+    border: 1px solid white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 7px;
+    width: 400px;
+    margin-right: 20px;
+}
+
+.icon-and-money {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.list-of-money {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+
+    li {
+        margin: 1px;
+        display: flex;
+        justify-content: center;
+        padding: 3px;
+
+        p:first-child {
+            margin-right: 20px;
+        }
+    }
+}
+
+.bottom-side {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.answers {
+    max-width: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.answer {
+    height: 50px;
+}
+
+.answer, .question {
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.question {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.money-and-timer {
+    display: flex;
+    align-items: center;
+
+    .timer {
+        font-size: 30px;
+    }
+}
+
+#display-none {
+    display: none;
+}
+
+.pop-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    p {
+        font-size: 30px;
+        text-align: center;
+
+        b {
+            font-size: 33px;
+        }
+    }
+}
+
+.pop-menu-inner {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    background-color: rgba(4, 0, 65, 0.95);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.popup-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    fill: white;
+}
+
+.option-inactive {
+    fill: red;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: none;
+}
+
+.public-answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-variants {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.variant-blocks {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.variant1-block, .variant2-block, .variant3-block, .variant4-block{
+    width: 40px;
+    background-color: red;
+    align-self: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: transparent;
+}
+
+.bottom-text {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ans4, .ans3, .ans2, .ans1 {
+    text-align: center;
+    width: 100%;
+}
